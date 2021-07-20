@@ -1,0 +1,571 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: Raleway;
+}
+
+@font-face {
+  src: url(../Raleway-Regular.ttf);
+  font-family: Raleway;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  position: relative;
+}
+
+body {
+  background: #fff;
+  color: #666;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.orange-red {
+  color: orangered;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #555;
+}
+
+button {
+  padding: 15px 40px;
+  width: 50%;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  color: inherit;
+  background: #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  transition: all 0.5s linear;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  transform: scale(0.96);
+}
+
+button.orange-red {
+  background: orangered;
+  color: #fff;
+}
+
+/*============================================================================================
+                              HEADER SECTION
+============================================================================================*/
+header {
+  height: 15vh;
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+}
+
+header .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header .logo i {
+  margin-right: 10px;
+}
+
+header .logo span {
+  margin-right: 3px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+header ul li {
+  margin: 0 25px;
+}
+
+header ul li a {
+  font-weight: 600;
+  letter-spacing: 1px;
+  opacity: 0.8;
+  transition: all 0.5s ease-in-out;
+}
+
+header ul li a:hover {
+  color: orangered;
+  opacity: 1;
+}
+
+header .menu {
+  font-size: 30px;
+  position: absolute;
+  top: 30px;
+  display: none;
+  cursor: pointer;
+  right: 30px;
+}
+
+/*======================================================================================
+                          SHOWCASE SECTION
+=====================================================================================*/
+.showcase {
+  height: calc(100vh - 20vh);
+  color: #666;
+  padding-bottom: 50px;
+}
+
+.showcase .showcase-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.showcase .showcase-inner .showcase-text {
+  padding-top: 100px;
+}
+
+.showcase .showcase-inner .showcase-text h1 {
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.showcase .showcase-inner .showcase-text p {
+  margin: 15px 0;
+}
+
+.showcase .showcase-inner .showcase-text button:hover {
+  transform: scale(0.96);
+}
+
+.showcase .showcase-inner .showcase-img img {
+  border-radius: 20px;
+  height: 450px;
+}
+
+/*================================================================================================
+                                DOG LOVE SECTION
+================================================================================================*/
+.dog-love {
+  padding: 100px 0;
+}
+
+.dog-love p {
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.dog-love .dog-love-inner .dog-love-img {
+  position: relative;
+}
+
+.dog-love .dog-love-inner .dog-love-img img {
+  width: 90%;
+  height: 500px;
+  margin: 30px 0 0 100px;
+}
+
+.dog-love .dog-love-inner .dog-love-img .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  margin: 30px 0 0 100px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dog-love .dog-love-inner .dog-love-img .overlay i {
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/*==============================================================================================
+                                  ABOUT SECTION
+==============================================================================================*/
+.about {
+  padding: 50px 0 100px;
+}
+
+.about h2 {
+  text-align: center;
+}
+
+.about p {
+  margin-bottom: 30px;
+}
+
+.about img {
+  border-radius: 20px;
+}
+
+.about .about-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.about .about-inner.top {
+  margin-bottom: 100px;
+}
+
+.about .about-inner .about-text {
+  padding-top: 50px;
+}
+
+/*===================================================================================================
+                                  BREEDS SECTION
+==================================================================================================*/
+.breeds {
+  text-align: center;
+  padding: 50px 0 100px;
+}
+
+.breeds h3 {
+  font-size: 20px;
+}
+
+.breeds button {
+  margin-top: 70px;
+  width: 20%;
+}
+
+.breeds .breeds-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 10px;
+}
+
+.breeds .breeds-inner img {
+  height: 85%;
+}
+
+.breeds .breeds-inner .breeds-box {
+  box-shadow: 0 2px 5px rgba(121, 121, 121, 0.4);
+  cursor: pointer;
+}
+
+.breeds .breeds-inner .breeds-box .breeds-text {
+  height: calc(100% - 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*==========================================================================================
+                                TESTIMONIALS SECTION
+=========================================================================================*/
+.testimonials {
+  padding: 100px 0;
+}
+
+.testimonials h2 {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.testimonials p {
+  margin-bottom: 30px;
+}
+
+.testimonials img {
+  border-radius: 20px;
+}
+
+.testimonials .testimonials-inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.testimonials .testimonials-inner .testimonials-text {
+  padding-top: 50px;
+}
+
+.testimonials .testimonials-inner .testimonials-text .stars {
+  margin-bottom: 10px;
+}
+
+.testimonials .testimonials-inner .testimonials-text .stars i {
+  color: yellow;
+  margin: 0 3px;
+}
+
+.testimonials .testimonials-inner .testimonials-text h4 {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/*====================================================================================
+                    FOOTER SECTION
+================================================================================*/
+.footer {
+  padding: 50px 0;
+  background: darkslateblue;
+  color: #fff;
+}
+
+.footer .logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer .logo i {
+  margin-right: 10px;
+}
+
+.footer .logo span {
+  margin-right: 3px;
+}
+
+.footer a {
+  color: #fff;
+  letter-spacing: 1px;
+  transition: all 0.5s ease-in-out;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: orangered;
+}
+
+.footer ul li {
+  margin-bottom: 20px;
+}
+
+.footer .footer-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.footer .footer-inner .footer-logo .logo {
+  margin-bottom: 120px;
+}
+
+.footer .footer-inner .footer-logo .footer-socials i {
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.footer .footer-inner .footer-contact .contact-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer .footer-inner .footer-contact .contact-box i {
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+.footer .footer-inner .footer-contact .contact-box p {
+  letter-spacing: 2px;
+}
+
+/*=============================================================================================
+                              MEDIA QUERIES
+============================================================================================*/
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  header .logo,
+  .footer .logo {
+    font-size: 25px;
+  }
+
+  header .logo i,
+  .footer .logo i {
+    margin-right: 5px;
+  }
+
+  header .logo span,
+  .footer .logo span {
+    margin-right: 2px;
+  }
+
+  header .header-inner nav ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: 60%;
+    opacity: 0.9;
+    height: 100vh;
+    padding: 30px 10px 30px 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  header .header-inner nav ul li {
+    padding: 30px 0;
+    display: block;
+  }
+
+  header .header-inner nav ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  header .header-inner nav ul li a:hover {
+    color: orangered;
+  }
+
+  header .header-inner nav ul li:last-child {
+    border-bottom: 0;
+  }
+
+  header .header-inner nav ul.show {
+    transform: translateX(-20px);
+  }
+
+  header .menu {
+    display: block;
+  }
+
+  .showcase {
+    padding: 0;
+    height: 100%;
+  }
+
+  .showcase .showcase-inner .showcase-text h1 {
+    font-size: 35px;
+  }
+
+  .showcase .showcase-inner .showcase-text p {
+    margin: 10px 0;
+  }
+
+  .showcase .showcase-inner,
+  .about .about-inner,
+  .breeds .breeds-inner,
+  .testimonials .testimonials-inner,
+  .footer .footer-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase .showcase-inner .showcase-text {
+    padding-top: 40px;
+  }
+
+  .dog-love p {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .dog-love .dog-love-inner .dog-love-img img {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0 0 0;
+  }
+
+  .dog-love .dog-love-inner .dog-love-img .overlay {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .about .about-inner.top {
+    margin-bottom: 50px;
+  }
+
+  .about .about-inner .about-text {
+    padding-top: 20px;
+  }
+
+  .about .about-inner.bottom {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .breeds h3 {
+    padding-top: 15px;
+  }
+
+  .breeds button {
+    width: 40%;
+  }
+
+  .testimonials h2 {
+    margin-bottom: 30px;
+  }
+
+  .footer .footer-inner .footer-logo .logo {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .breeds button,
+  .about button {
+    width: 70%;
+  }
+}
